@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <title>theiventhiram thanus</title>
+        <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body >
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Background Animation</title>
+    <style>
+        body {
+            margin: auto;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow: auto;
+            background-color: #ffffff; /* Changed background color */
+        }
+
+        .wave-container {
+            position: relative;
+        }
+
+        .wave {
+            background: rgb(255 255 255 / 25%);
+            border-radius: 1000% 1000% 0 0;
+            position: fixed;
+            width: 200%;
+            height: 12em;
+            animation: wave 10s -3s linear infinite;
+            transform: translate3d(0, 0, 0);
+            opacity: 0.8;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .wave:nth-of-type(2) {
+            bottom: -1.25em;
+            animation: wave 18s linear reverse infinite;
+            opacity: 0.8;
+        }
+
+        .wave:nth-of-type(3) {
+            bottom: -2.5em;
+            animation: wave 20s -1s reverse infinite;
+            opacity: 0.9;
+        }
+
+        @keyframes wave {
+            2% {
+                transform: translateX(1);
+            }
+
+            25% {
+                transform: translateX(-25%);
+            }
+
+            50% {
+                transform: translateX(-50%);
+            }
+
+            75% {
+                transform: translateX(-25%);
+            }
+
+            100% {
+                transform: translateX(1);
+            }
+        }
+
+        /* Optional gradient animation */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(315deg,rgb(158, 158, 158) 3%, rgb(199, 250, 255) 38%, rgb(106, 198, 196) 68%, rgb(231, 225, 225) 98%);
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+            background-attachment: fixed;
+            z-index: -2;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+            }
+            50% {
+                background-position: 100% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wave-container">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+</body>
+</html>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <div class="container" id="Home">
+            <div class="row g-5">
+                <div class="col-lg-4 sticky-lg-top vh-100">
+                    <div class="d-flex flex-column h-100 text-center overflow-auto shadow">
+                        <nav class="navbar"  >
+        
+                        <ul class="nav-list" style="list-style-type: none; margin: 0; padding: 0; display: flex; gap: 10px; align-items: center;">
+                            <li><a href="#Home" class="nav-link" style="text-decoration: none; padding: 8px 10px; color:#00B87B; font-size: 12px; border-radius: 15px; transition: all 0.3s ease-in-out;">Home</a></li>
+                            <li><a href="#portfolio" class="nav-link" style="text-decoration: none; padding: 8px 10px; color:#00B87B; font-size: 12px; border-radius: 15px; transition: all 0.3s ease-in-out;">Portfolio</a></li>
+                            <li><a href="#about" class="nav-link" style="text-decoration: none; padding: 8px 10px; color:#00B87B; font-size: 12px; border-radius: 15px; transition: all 0.3s ease-in-out;">About Me</a></li>
+                            <li><a href="#contact" class="nav-link" style="text-decoration: none; padding: 8px 10px; color:#00B87B; font-size: 12px; border-radius: 15px; transition: all 0.3s ease-in-out;">Contact</a></li>
+                        </ul>
+                            </nav>
+                        <img class="ima1" src="img/profile.jpg" alt="Image" style="margin-top: 20px;height: 380px;">
+                        <h1 class="text-primary mt-2" style="font-size: 30px;">THEIVENTHIRAM THANUS</h1>
+                        <div class="mb-4" style="height: 20px;">
+                               <!-- Typed Text Section (Color Modified) -->
+                <div class="mb-4" style="height: 20px;">
+                    <h4 class="typed-text-output d-inline-block" style="color: black;"></h4> <!-- Changed color to black -->
+                    <div class="typed-text d-none" style="color: black;font-size: 20px;">UI/UX Designer, Web Designer, Web Developer, Front End Developer</div> <!-- Changed color to black -->
+                </div>
+                        </div>
+                     <!-- Social Media Icons with Hover Effects -->
+<!-- Social Media Icons with Hover Effects -->
+<div class="d-flex justify-content-center mt-auto mb-3">
+    <a class="social-icon social-fb" href="https://www.facebook.com/thanu.rocky.5?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+    <a class="social-icon social-linkedin" href="https://www.linkedin.com/in/theiventhiram-thanus/"><i class="fab fa-linkedin-in"></i></a>
+    <a class="social-icon social-insta" href="https://www.instagram.com/theiventhiram_thanus/"><i class="fab fa-instagram"></i></a>
+    <a class="social-icon social-github" href="https://github.com/TheiventhiramThanus"><i class="fab fa-github"></i></a>
+    <a class="social-icon social-pinterest" href="https://id.pinterest.com/thanurock/"><i class="fab fa-pinterest"></i></a>
+  
+</div>
+
+
+
+                        <div class="d-flex align-items-end justify-content-between border-top">
+                            <div class="d-flex align-items-end justify-content-between border-top">
+                                <div class="d-flex align-items-end justify-content-between border-top">
+                                    <!-- Download CV Button -->
+                                    <a class="dynamic-btn w-50 btn-download text-center" href="CV.html" style="font-size: medium; white-space: nowrap;">Download CV</a>
+                                
+                                    <!-- Contact Button -->
+                                      </div>
+                                 </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CSS Styles -->
+<style>
+     
+
+    .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        padding: 8px 10px;
+        color: #555;
+        font-size: 10px;
+        border-radius: 15px;
+        transition: all 0.3s ease-in-out;
+        background-color: transparent; /* Default background */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Default shadow */
+    }
+
+    .nav-link:hover {
+        background-color: #2c2b2b; /* Light background on hover */
+        color: #000; /* Change text color on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+    }
+
+    .active {
+        background-color: #d0d0d0; /* Background for the active link */
+        color: #000; /* Text color for active link */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Shadow for active link */
+    }
+    
+
+    .container .shadow {
+        
+        background-color: transparent;
+        border-radius: 30px;
+        padding: 15px;
+        position: relative;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image corner radius */
+    .container img {
+        border-radius: 15px;
+    }
+
+  /* Base styles for social icons */
+.social-icon {
+    display: inline-block;
+    width: 40px; /* Set width and height to make them square */
+    height: 40px;
+    line-height: 40px; /* Align icon vertically */
+    text-align: center; /* Align icon horizontally */
+    border-radius: 35%; /* Make icons round */
+    background-color: #f0f0f0; /* Default background color */
+    color: #333; /* Default icon color */
+    font-size: 18px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Facebook icon - blue hover effect */
+.social-fb:hover  {
+    transform: scale(1.1); /* Slightly scale up on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+    color: #ffffff;
+    
+}
+
+.social-fb{
+   
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Initial shadow */
+
+
+    background-color: #1877F2; /* Facebook blue on hover */
+    color: #fff; /* White icon color */
+}
+
+/* LinkedIn icon - LinkedIn blue color */
+.social-linkedin:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+    color: #ffffff;
+    
+}
+
+.social-linkedin {
+    background-color: #0077B5; /* LinkedIn blue on hover */
+    color: #fff; /* White icon color */
+}
+
+/* Instagram icon - gradient color hover effect */
+.social-insta:hover  {
+    transform: scale(1.1); /* Slightly scale up on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+    color: #ffffff;
+   
+}
+
+.social-insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: #fff; /* White icon color */
+}
+
+/* GitHub icon - black hover effect */
+.social-github:hover  {
+    transform: scale(1.1); /* Slightly scale up on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+    color: #ffffff;
+   
+}
+
+.social-github {
+    background-color: #333; /* GitHub black on hover */
+    color: #fff; /* White icon color */
+}
+
+/* Pinterest icon - red hover effect */
+.social-pinterest:hover  {
+    transform: scale(1.1); /* Slightly scale up on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+    color: #ffffff;
+  
+}
+
+.social-pinterest{
+    background-color: #E60023; /* Pinterest red on hover */
+    color: #fff; /* White icon color */
+}
+
+/* YouTube icon - red hover effect */
+.social-youtube {
+    background-color: #f0f0f0; /* Default background */
+}
+
+.social-youtube:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+    color: #ffffff;
+}
+
+/* Add shadow on hover for all social icons */
+.social-icon:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Active states can still be defined if needed */
+.social-fb:active {
+    background-color: #155ab6; /* Darker blue when clicked */
+}
+
+.social-linkedin:active {
+    background-color: #005d8a; /* Darker LinkedIn blue on click */
+}
+
+.social-insta:active {
+    background: radial-gradient(circle at 30% 107%, #e8b234 0%, #df4737 45%, #b71c7a 60%, #2244b5 90%);
+}
+
+.social-github:active {
+    background-color: #222; /* Darker GitHub on click */
+}
+
+.social-pinterest:active {
+    background-color: #A4001D; /* Darker Pinterest on click */
+}
+
+
+                </style>
+                <div class="col-lg-8" id="about" >
+
+               
+                                      
+                    <!-- About Start -->
+                    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s" style="background-color:transparent;border-color:black ;padding: 20px  ;border-radius: 30px;box-shadow: 0 5px 20px rgba(54, 51, 51, 0.079); " >
+                        <h1 class="title pb-3 mb-5" style="color: rgba(44, 62, 80, .9);">About Me</h1>
+                        <p style="color:  rgba(44, 62, 80, .9);margin-top: 0%;">I am Theiventhiram Thanus, a passionate Full Stack Developer, UI/UX Designer, and student at ESOFT Metro Campus. I specialize in building dynamic, user-friendly web applications, ensuring responsive designs with an emphasis on intuitive user experience. My expertise also extends to SEO, social media marketing, and content creation, helping businesses enhance their online presence.</p>
+                        <div class="row mb-4" style="color: rgba(44, 62, 80, .9);">
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Name:</span> Theiventhiram Thanus
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Birthday:</span> 16 December 2003
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Degree:</span> software engineering Learner 👨‍💻
+                            </div>
+                            
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Phone:</span>  
+                                <a style="color:  rgba(44, 62, 80, .9); " href="tel:+94762920381">0762920381</a>
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Email:</span> 
+                                <a style="color:  rgba(44, 62, 80, .9); " href="mailto:thanus1216@gmail.com">thanus1216@gmail.com</a>
+                            </div>
+                            
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Address:</span> JAFFNA , SRILANKA
+                            </div>
+                            <div class="col-sm-6 py-1">
+                                <span class="fw-medium text-primary">Freelance:</span> Available
+                            </div>
+                        </div>
+                        <style>
+                            .bg-secondary {
+                                background-color: #343a40;
+                                border-radius: 10px;
+                                transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                            }
+                        
+                            .bg-secondary:hover {
+                                transform: translateY(-10px);
+                                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+                            }
+                        
+                            .text-primary {
+                                color: #000000; /* You can adjust the color as needed */
+                            }
+                        
+                            .d-flex {
+                                display: flex;
+                                align-items: center;
+                            }
+                        
+                            .ps-3 {
+                                padding-left: 1rem;
+                            }
+
+                           </style>
+                           
+                        
+                    </section>
+                    <div class="row g-4" style="margin-top: 20px;">
+                        <div class="col-md-4 col-lg-6 col-xl-4">
+                            <div class="d-flex tool-box1 p-4" style="border-radius: 20px;
+                            background-color:transparent; /* Transparent background */
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+                            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">6</h1>
+                                <div class="ps-3">
+                                    <p class="mb-0" style="color: #121111;">Months of</p>
+                                    <h5 class="mb-0" style="color: #121111;">Experience</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6 col-xl-4">
+                            <div class="d-flex tool-box1 p-4" style="border-radius: 20px;
+                           background-color:transparent; /* Transparent background */
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+                            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">4</h1>
+                                <div class="ps-3">
+                                    <p class="mb-0"style="color: #121111;">Happy</p>
+                                    <h5 class="mb-0"style="color: #121111;">Clients</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6 col-xl-4">
+                            <div class="d-flex tool-box1 p-4" style="border-radius: 20px;
+                           background-color:transparent; /* Transparent background */
+                            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+                            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">6</h1>
+                                <div class="ps-3">
+                                    <p class="mb-0"style="color: #121111;">Complete</p>
+                                    <h5 class="mb-0"style="color: #121111;">Projects</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <style>.tool-box1 {
+                        width: 250px;
+                        height: 100px;
+                        background-color:rgba(255, 255, 255, 0.119);
+                        border-radius: 20px; /* Small box corner radius */
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                        
+                        transition: transform 0.3s ease;
+                    }
+                   
+                    .tool-box1:hover {
+                        transform: translateY(-8px);
+                    }
+                    @media (max-width: 600px) {
+                        .tool-box1 {
+                        width: 320px;
+                        height: 80px;
+                        background-color:rgba(255, 255, 255, 0.119);
+                        border-radius: 20px; /* Small box corner radius */
+                        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                        
+                        transition: transform 0.3s ease;
+
+    
+}}
+                 </style>
+                    <!-- About End -->
+                     
+                        <!-- CSS for Enhanced Colors, Dynamic Effects, and Lighting Box Shadows -->
+<!-- Modal Structure -->
+<style>
+    /* General Styling */
+    .portfolio-item {
+        position: relative;
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+        border-radius: 30px; /* Rounded corners */
+        overflow: hidden;
+    }
+
+    .portfolio-item:hover {
+        transform: translateY(-15px); /* Lift effect */
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+        border-radius: 20px; /* Increased border radius on hover */
+    }
+
+    /* Portfolio Container Flex Layout */
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; /* Space items evenly */
+        gap: 20px; /* Add space between items */
+        padding: 0 10px; /* Add padding to avoid edge overlap */
+    }
+
+    /* Portfolio Item Styling */
+    .portfolio-item {
+        width: 48%; /* Make items take 48% of the container's width */
+    }
+
+    /* Filter Buttons */
+    #portfolio-flters {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #portfolio-flters li {
+        margin: 0 15px; /* Add margin between buttons */
+        padding: 10px 25px;
+        cursor: pointer;
+        transition: background-color 0.4s ease, box-shadow 0.4s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 25px;
+    }
+
+  /* Flexbox container for aligning button and text */
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between button and text */
+}
+
+/* Small button styling */
+.small-btn {
+    font-size: 12px; /* Smaller text for button */
+    padding: 6px 12px; /* Smaller padding for button */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Button styles */
+.btn-secondary {
+    background-color: #f7f7f7;
+    color: #333;
+    border: none;
+    padding: 4px 0%; /* Standard padding */
+    font-size: 12px; /* Standard font size */
+    border-radius: 8px; /* Rounded button corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.btn-secondary.active {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Active filter style */
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #ff79c6; /* Button hover effect */
+    box-shadow: 0 8px 24px rgba(255, 121, 198, 0.6); /* Button shadow on hover */
+}
+
+/* Small text styling */
+.small-text {
+    font-size: 12px; /* Smaller font size for text */
+    color: #555; /* Lighter text color */
+}
+.btn-category i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Optional - Responsive adjustments */
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column; /* Stack button and text vertically on smaller screens */
+        gap: 2px;
+    }
+
+    .btn-secondary {
+        width: 100%; /* Make button full width on small screens */
+    }
+
+    .small-text {
+        text-align: center; /* Center the text on smaller screens */
+    }
+}
+
+    /* Modal Styling */
+    .modal {
+        
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 500px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow-y: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 900px;
+    }
+
+    .image-scroll-container {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .image-scroll-container img {
+        margin-right: 10px;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        color: white;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .portfolio-item {
+            width: 100%; /* Take full width on smaller screens */
+        }
+    }
+</style>
+
+
+<!-- Portfolio Section -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Popup Slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tool-box {
+            width: 100%;
+            max-width: 300px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .tool-box img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .tool-box p {
+            margin-top: 1px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .tool-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .tool-box p.description {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+
+     
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .popup-content .close-btn {
+            color: black;
+        }
+
+        .slider {
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .slider img {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            display: none;
+        }
+
+        .slider img.active {
+            display: block;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            color: #333;
+            background-color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .nav-arrow.left {
+            left: 10px;
+        }
+
+        .nav-arrow.right {
+            right: 10px;
+        }
+
+       /* Media Query for Mobile */
+@media (max-width: 600px) {
+   .container{margin-top: 0%;}
+    .popup-content {
+        max-width: 90%;
+        max-height: 80%;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+    .popup-content img {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    .slider img {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    .nav-arrow {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .close-btn {
+        font-size: 24px;
+        right: 10px;
+        top: 5px;
+    }
+}
+    </style>
+</head>
+<body >
+    <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s"id="portfolio" style="background-color:transparent;border-color:black ;padding: 20px  ;border-radius: 30px;box-shadow: 0 5px 20px rgba(54, 51, 51, 0.079);margin-top: 40px;" >
+        <h1 class="title pb-3 mb-5" style="color: rgba(44, 62, 80, .9);">Portfolio</h1>
+    <h2 style="color: rgba(44, 62, 80, .9); font-size: large">Check my projects</h2>
+
+    <div class="container" >
+        
+        <!-- Project 1 -->
+        <div class="tool-box" onclick="openPopup1(0)" style="width: 300px;height: 300px;">
+            <img src="img/pro1.jpg" alt="Photoshop" style="width: 300px;height: 300px;">
+            <p>Quiet Attic Film</p>
+            <p class="description">The C# application is a Film Production DBMS for Quiet Attic Film.</p>
+        </div>
+        <div class="tool-box" onclick="openPopup1(0)" style="width: 300px;height: 300px;">
+            <img src="img/pro2.jpg" alt="Photoshop" style="width: 300px;height: 300px;">
+            <p>GRIFINDO TOYS</p>
+            <p class="description">The C# Windows Forms for "GRIFINDO TOYS" manages employee data, payroll securely. </div>
+       
+    </div>
+
+
+    <div class="container" >
+        
+        <!-- Project 1 -->
+        <div class="tool-box" onclick="openPopup1(0)" style="width: 300px;height: 300px;">
+            <img src="img/pro3.jpg" alt="Photoshop" style="width: 300px;height: 300px;">
+            <p>Malcolm Lismore's photography website </p>
+            <p class="description">Malcolm Lismore's photography website is built using HTML, CSS, JavaScript, and PHP.</p>
+        </div>
+        <div class="tool-box" onclick="openPopup1(0)" style="width: 300px;height: 300px;">
+            <img src="img/pro4.jpg" alt="Photoshop" style="width: 300px;height: 300px;">
+            <p>ChangeU Salon</p>
+            <p class="description">The front end of ChangeU Salon's website is crafted with HTML and CSS</p>
+        </div>
+       
+    </div>
+    
+
+
+   </section>
+</body>
+</html>
+
+<script>// JavaScript function to open portfolio.html
+    function openPopup1(index) {
+        // Assuming you want to navigate to 'portfolio.html' when the div is clicked
+        window.location.href = '';
+    }
+    </script>
+
+    
+  
+
+<!-- Experience Start -->
+<section class="py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <h1 class="title pb-3 mb-5" style="color: rgba(44, 62, 80, .9); font-size: 2.5rem;">
+        Resume
+    </h1>
+    <h2 style="color: rgba(44, 62, 80, .9); font-size: 2rem;">My Education</h2>
+    <div class="border-start border-2 border-light pt-2 ps-5 text-secondary" style=" border-radius: 20px;">
+        <div class="position-relative mb-4  shadow p-3 animated-box" style="background-color: #ffffff39;border-radius: 20px;">
+            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -40px;"></span>
+            <h5 class="mb-1" style="color: rgba rgba(44, 62, 80, .9);font-size: 1.5rem;">
+                HND Software Engineering
+            </h5>
+            <p class="mb-2 text-muted italic">
+                <a href="https://www.esoft.lk" target="_blank" class="text-muted text-decoration-none">
+                    ESOFT METRO CAMPUS
+                </a> | <small>2023-2025</small>
+            </p>
+            <p class="text-muted" style="font-size: 0.9rem;">
+                I'm currently studying Software Engineering at ESOFT Metro Campus, where I'm gaining expertise in software design, development, and maintenance. The course focuses on hands-on projects, preparing me for a career in software development and engineering.
+            </p>
+        </div>
+        <div class="position-relative mb-4  shadow p-3 animated-box" style="background-color: #ffffff39;">
+            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -40px;"></span>
+            <h5 class="mb-1" style="color: rgba(44, 62, 80, .9); font-size: 1.5rem;">
+                O/L & A/L
+            </h5>
+            <p class="mb-2 text-muted italic">
+                <a href="https://www.chavakachcherihinducollege.edu.lk" target="_blank" class="text-muted text-decoration-none">
+                    CHAVAKACHCHERI HINDU COLLEGE
+                </a> | <small>2014-2023</small>
+            </p>
+            <p class="text-muted" style="font-size: 0.9rem;">
+                I completed both my O/L and A/L at Chavakachcheri Hindu College. From 2014 to 2023, I studied in the Physical Science stream for A/L, focusing on subjects like mathematics, physics, and chemistry.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Styles for dynamic animations and lighting effects -->
+<style>
+    .rounded {
+        border-radius: 100px; /* Set corner radius to 50px */
+    }
+    
+    .shadow {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    }
+    
+    h1.title {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-family: 'Arial', sans-serif;
+        font-size: 2rem;
+    }
+    
+    h5 {
+        font-size: 1.5rem;
+    }
+    
+    .text-muted {
+        color: #6c757d;
+    }
+    
+    /* Dynamic Animation and Lighting Effect */
+    .animated-box {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+    
+    .animated-box:hover, .animated-box:focus {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 10px rgba(123, 123, 123, 0.2), 0 0 10px rgba(103, 213, 221, 0.223); /* Lighting effect */
+    }
+    
+   
+</style>
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #545454;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.tool-box {
+    width: 130px;
+    height: 130px;
+    background-color:rgba(255, 255, 255, 0.119);
+    border-radius: 20px; /* Small box corner radius */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.tool-box img {
+    width: 70px;
+    height: 70px;
+}
+
+.tool-box p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0a0a0a;
+}
+
+.tool-box:hover {
+    transform: translateY(-8px);
+}
+</style>
+<h2 style="color: rgba(44, 62, 80, .9); font-size: 2rem;">My favourite tools</h2>
+
+<body id="favourite">
+    <div class="container">
+        <div class="tool-box">
+            <img src="img/photoshop.png" alt="Photoshop">
+            <p>Photoshop</p>
+        </div>
+        <div class="tool-box" >
+            <img src="img/figma.png" alt="Figma" style="height: 50px;width: 50px;">
+            <p>Figma</p>
+        </div>
+        <div class="tool-box">
+            <img src="img/canva.jpg" alt="Illustrator">
+            <p>Canva</p>
+        </div>
+        <div class="tool-box">
+            <img src="img/html.png" alt="Sketch">
+            <p>HTML 5</p>
+        </div>
+        <div class="container">
+        <div class="tool-box">
+            <img src="img/css.png" alt="Figma">
+            <p>CSS 3</p>
+        </div>
+      
+    </div>
+        <!-- Add more tools as needed -->
+    </div>
+</body>
+
+    <!-- Experience End -->
+
+      <!-- services  -->
+    <section class="py-5 wow fadeInUp" data-wow-delay="0.1s" id="services">
+        <h1 class="title pb-3 mb-5" style="color: rgba(44, 62, 80, .9); font-size: 2.5rem;">
+            Services
+        </h1>
+        
+        <div class="border-start border-2 border-light pt-2 ps-5 text-secondary" style=" border-radius: 20px;">
+            <a href="#contact"><div class="position-relative mb-4  shadow p-3 animated-box" style="background-color: #ffffff39;border-radius: 20px;">
+                <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -40px;"></span>
+                <h5 class="mb-1" style="color: rgba rgba(44, 62, 80, .9);font-size: 1.5rem;">
+                    Custom Website Design 
+                </h5>
+                <p class="text-muted" style="font-size: 0.9rem;">Custom E-commerce Website Design offers unique, tailored websites with secure payment gateways and inventory management. Responsive Web Design ensures seamless functionality across all devices for a smooth user experience.
+                  </p>
+            </div>
+            </a> 
+          
+        </a> 
+        <a href="#contact"><div class="position-relative mb-4  shadow p-3 animated-box" style="background-color: #ffffff39;border-radius: 20px;">
+            <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -40px;"></span>
+            <h5 class="mb-1" style="color: rgba rgba(44, 62, 80, .9);font-size: 1.5rem;">
+                Brand Identity Design
+            </h5>
+            <p class="text-muted" style="font-size: 0.9rem;">Developing a complete brand identity package including logos, color schemes, and style guidelines.
+              </p>
+        </div>
+    </a> 
+    <a href="#contact"><div class="position-relative mb-4  shadow p-3 animated-box" style="background-color: #ffffff39;border-radius: 20px;">
+        <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -40px;"></span>
+        <h5 class="mb-1" style="color: rgba rgba(44, 62, 80, .9);font-size: 1.5rem;">
+            Brochure and Flyer Design
+        </h5>
+        <p class="text-muted" style="font-size: 0.9rem;">Creating promotional materials for businesses, events, or products.
+          </p>
+    </div>
+</a> 
+<a href="#contact"><div class="position-relative mb-4  shadow p-3 animated-box" style="background-color: #ffffff39;border-radius: 20px;">
+    <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -40px;"></span>
+    <h5 class="mb-1" style="color: rgba rgba(44, 62, 80, .9);font-size: 1.5rem;">
+        Social Media Management
+    </h5>
+    <p class="text-muted" style="font-size: 0.9rem;">Designing posts, managing content, and scheduling for platforms like Instagram, Facebook, and LinkedIn.
+      </p>
+</div>
+</a> 
+<a href="#contact"><div class="position-relative mb-4  shadow p-3 animated-box" style="background-color: #ffffff39;border-radius: 20px;">
+    <span class="bi bi-arrow-right fs-4 text-light position-absolute" style="top: -5px; left: -40px;"></span>
+    <h5 class="mb-1" style="color: rgba rgba(44, 62, 80, .9);font-size: 1.5rem;">
+        Poster and Banner Design
+    </h5>
+    <p class="text-muted" style="font-size: 0.9rem;">Creating eye-catching posters or banners for events, advertisements, or personal use.
+      </p>
+</div>
+</a> 
+
+
+          
+
+            
+
+        </div>
+    </section>
+
+
+                   
+<style>
+    /* General form styling */
+    .custom-form {
+        width: 100%;
+        background: linear-gradient(135deg, rgba(169, 204, 227, 0.2), rgba(142, 68, 173, 0.1));
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(37, 37, 37, 0.1);
+        position: relative;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    /* Full box lighting effect */
+    .custom-form:hover {
+        box-shadow: 0 0 20px rgba(21, 21, 22, 0.5), 0 0 40px rgba(104, 92, 252, 0.3);
+        border: 1px solid rgba(31, 30, 36, 0.7);
+    }
+
+    .custom-form-floating {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .custom-form-floating input,
+    .custom-form-floating textarea {
+        border-radius: 10px;
+        padding: 15px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        width: 100%;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+    }
+
+    .custom-form-floating input:focus,
+    .custom-form-floating textarea:focus {
+        border-color: #4d4b4e;
+    }
+
+   
+    /* Button styling with full box lighting effect */
+    .custom-btn {
+        border-radius: 30px;
+        background-color: #282531; /* Updated button color */
+        color: white;
+        padding: 12px;
+        width: 100%;
+        font-size: 16px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 0 20px rgba(27, 27, 30, 0.6);
+    }
+
+    .custom-btn:hover {
+        background-color: #282431;
+    }
+
+    .custom-btn::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: rotate(45deg);
+        transition: all 0.75s ease;
+    }
+
+    .custom-btn:hover::before {
+        top: 150%;
+        left: 150%;
+    }
+
+    /* Success message animation */
+    .success-message {
+        display: none;
+        background-color: #d4edda;
+        color: #155724;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .success-animation {
+        display: block;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Desktop Specific Styling */
+    @media (min-width: 992px) {
+        .custom-btn {
+            width: 220px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    }
+
+    /* Mobile Specific Styling */
+    @media (max-width: 768px) {
+        .custom-btn {
+            width: 100%;
+            margin: 0;
+        }
+    }
+</style>
+
+<!-- Contact Form Start -->
+<section class="py-5" id="contact">
+    <h1 style="color: rgba(52, 73, 94, .9); font-size: 2.5rem;" class="title pb-3 mb-5">Contact</h1>
+    
+    <!-- Form with Action and Access Key -->
+    <form class="custom-form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="19181750-5341-4f11-b515-3c5670e892cc">
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="custom-form-floating">
+                    <input type="text" class="custom-input" id="full-name" name="name" placeholder="Enter your name" required>
+                   
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="custom-form-floating">
+                    <input type="text" class="custom-input" id="Address" name="Address" placeholder="Enter your Address">
+                  
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="custom-form-floating">
+                    <input type="email" class="custom-input" id="email-address" name="email" placeholder="Enter your email" required>
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="custom-form-floating">
+                    <input type="text" class="custom-input" id="phone-number" name="phone" placeholder="Enter your phone number" required>
+                 
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="custom-form-floating">
+                    <input type="text" class="custom-input" id="message-subject" name="subject" placeholder="Enter your message" required>
+                    
+                </div>
+            </div>
+            <div class="col-12 text-center" style="margin-top: 30px;">
+                <button type="submit" class="custom-btn" id="submit-btn">Send Message</button>
+            </div>
+        </div>
+    </form>
+
+    
+    <!-- Success Message -->
+    <div class="success-message" id="success-message">
+        Your message has been successfully sent! We'll get back to you soon.
+    </div>
+</section>
+
+
+
+<!-- Footer Start -->
+<style>
+    .social-btn {
+        border-radius: 15px; /* Rounded corners for each icon */
+        padding: 10px; /* Padding for better spacing */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Initial shadow */
+    }
+
+    .social-btn:hover {
+        transform: scale(1.1); /* Slightly scale up on hover */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+    }
+</style>
+
+<section class="wow fadeIn" data-wow-delay="0.1s" style="margin-top: 0%;">
+    <div class="">
+        <div class="d-flex justify-content-center mb-4">
+           
+            <a class="btn btn-dark btn-square mx-1 social-btn" href="https://www.facebook.com/thanu.rocky.5?mibextid=LQQJ4d">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="btn btn-dark btn-square mx-1 social-btn" href="https://www.linkedin.com/in/theiventhiram-thanus/">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="btn btn-dark btn-square mx-1 social-btn" href="https://www.instagram.com/theiventhiram_thanus/">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer End -->
+
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
